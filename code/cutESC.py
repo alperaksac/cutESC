@@ -1,5 +1,5 @@
 """
-CutESC: Cut-Edge for Spatial Clustering based on Proximity Graph
+CutESC: Cutting Edge Spatial Clustering Technique based on Proximity Graphs
 """
 
 from __future__ import print_function
