@@ -368,7 +368,7 @@ def find_components(graph, allow_outliers=False):
         hist = [len(v) for v in comps]
         x_axis = list(range(len(hist)))
         kn = KneeLocator(x_axis, hist, S=1.0,
-                         invert=False, direction='decreasing')
+                         curve='convex', direction='decreasing')
         idx = kn.knee
         for i, c in enumerate(comps[idx:]):
             for n in c:

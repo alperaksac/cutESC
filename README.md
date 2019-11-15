@@ -14,8 +14,9 @@ The CutESC algorithm removes edges when a dynamically calculated cut-edge value 
 ```bash
 $ pip install -r requirements.txt
 ```
+* To install `jqmcvi` library, go to https://github.com/jqmviegas/jqm_cvi
 
-If you use this code, please cite the following [paper]():
+If you use this code, please cite the following [paper](https://www.sciencedirect.com/science/article/pii/S0031320319302468):
 
 ```
 @article{aksac2019cutesc,

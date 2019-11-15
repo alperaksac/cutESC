@@ -41,7 +41,7 @@ def benchmarks(data, labels_true, labels_pred, verbose=False):
 
     results['Silhouette Coefficient'] = round(metrics.silhouette_score(
         data, labels_pred), 3)
-    results['Calinski Harabaz'] = round(metrics.calinski_harabaz_score(
+    results['Calinski Harabaz'] = round(metrics.calinski_harabasz_score(
         data, labels_pred))
     results['Dunn Index'] = round(jqmcvin.dunn_fast(data, labels_pred), 3)
 
@@ -62,7 +62,7 @@ def benchmarks(data, labels_true, labels_pred, verbose=False):
     results['Adjusted Rand Index'] = round(metrics.adjusted_rand_score(
         labels_true, labels_pred), 3)
     results['Adjusted Mutual Information'] = round(metrics.adjusted_mutual_info_score(
-        labels_true, labels_pred), 3)
+        labels_true, labels_pred, average_method='max'), 3)
 
     if verbose:
         print(80 * '*')
